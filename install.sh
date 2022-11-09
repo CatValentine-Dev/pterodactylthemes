@@ -13,7 +13,7 @@ installTheme(){
     echo "Installing theme..."
     cd /var/www/pterodactyl
     rm -r pterodactyl
-    git clone https://github.com/CatValentine-Dev/pterodactyl.git
+    git clone https://github.com/CatValentine-Dev/pterodactyltheme.git
     cd pterodactyl
     rm /var/www/pterodactyl/resources/scripts/MinecraftPurpleTheme.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
@@ -47,7 +47,7 @@ installThemeQuestion(){
 }
 
 repair(){
-    bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactyl/main/repair.sh)
+    bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactyltheme/main/repair.sh)
 }
 
 restoreBackUp(){
