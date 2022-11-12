@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from '@/components/App';
 import { setConfig } from 'react-hot-loader';
-import './MinecraftPurpleTheme.css';
+import './pterodactylthemes.css';
 
 // Enable language support.
 import './i18n';
