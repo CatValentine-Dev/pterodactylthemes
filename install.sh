@@ -10,15 +10,15 @@ clear
 installTheme(){
     cd /var/www/
     tar -cvf pterodactyl.tar.gz
-    echo "Installing theme..."
+    echo "Instalando temas..."
     cd /var/www/pterodactyl
     rm -r pterodactyl
-    git clone https://github.com/CatValentine-Dev/pterodactyltheme.git
+    git clone https://github.com/CatValentine-Dev/pterodactylthemes.git
     cd pterodactyl
-    rm /var/www/pterodactyl/resources/scripts/MinecraftPurpleTheme.css
+    rm /var/www/pterodactyl/resources/scripts/pterodactylthemes.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     mv index.tsx /var/www/pterodactyl/resources/scripts/index.tsx
-    mv MinecraftPurpleTheme.css /var/www/pterodactyl/resources/scripts/MinecraftPurpleTheme.css
+    mv pterodactylthemes.css /var/www/pterodactyl/resources/scripts/pterodactylthemes.css
     cd /var/www/pterodactyl
 
     curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
@@ -47,14 +47,14 @@ installThemeQuestion(){
 }
 
 repair(){
-    bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactyltheme/main/repair.sh)
+    bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylthemes/main/repair.sh)
 }
 
 restoreBackUp(){
-    echo "Restoring backup..."
+    echo "Restaurando Backup..."
     cd /var/www/
-    tar -xvf MinecraftPurpleThemebackup.tar.gz
-    rm MinecraftPurpleThemebackup.tar.gz
+    tar -xvf pterodactylthemesbackup.tar.gz
+    rm pterodactylthemes.tar.gz
 
     cd /var/www/pterodactyl
     yarn build:production
@@ -67,7 +67,7 @@ echo "Discord: https://discord.gg/WkVVtTaBRh/"
 echo ""
 echo "[1] Instalar o Tema"
 echo "[2] Restaurar backup"
-echo "[3] Reparar Painel (Use caso tenha algo problema na instalação do thema)"
+echo "[3] Reparar Painel (Use caso tenha algo problema na instalação do temas)"
 echo "[4] Sair"
 
 read -p "Insira um numero: " choice
