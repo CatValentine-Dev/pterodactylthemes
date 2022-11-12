@@ -41,6 +41,8 @@ repararPainel(){
     yarn build:production
 
     sudo php artisan optimize:clear
+    
+    chown -R www-data:www-data /var/www/pterodactyl/*
 
     php artisan up
 }
