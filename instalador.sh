@@ -7,7 +7,7 @@ fi
 
 clear
 
-installTheme(){
+instalartema(){
     cd /var/www/
     tar -cvf pterodactyl.tar.gz
     echo "Instalando temas..."
@@ -35,22 +35,22 @@ installTheme(){
 
 }
 
-installThemeQuestion(){
+instaladordetemas(){
     while true; do
         read -p "Tem certeza de que deseja instalar o tema [y/n]? " yn
         case $yn in
-            [Yy]* ) installTheme; break;;
+            [Yy]* ) instalartema; break;;
             [Nn]* ) exit;;
             * ) echo "Por favor responda yes ou no.";;
         esac
     done
 }
 
-repair(){
-    bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylthemes/main/repair.sh)
+reparar(){
+    bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylthemes/main/reparar.sh)
 }
 
-restoreBackUp(){
+restaurarbackup(){
     echo "Restaurando Backup..."
     cd /var/www/
     tar -xvf pterodactylthemesbackup.tar.gz
@@ -73,15 +73,15 @@ echo "[4] Sair"
 read -p "Insira um numero: " choice
 if [ $choice == "1" ]
     then
-    installThemeQuestion
+    instaladordetemas
 fi
 if [ $choice == "2" ]
     then
-    restoreBackUp
+    restaurarbackup
 fi
 if [ $choice == "3" ]
     then
-    repair
+    reparar
 fi
 if [ $choice == "4" ]
     then
