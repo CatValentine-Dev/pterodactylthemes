@@ -5,7 +5,7 @@ if (( $EUID != 0 )); then
     exit
 fi
 
-repairPanel(){
+repararPainel(){
     cd /var/www/pterodactyl
 
     php artisan down
@@ -48,7 +48,7 @@ repairPanel(){
 while true; do
     read -p "Tem certeza de que deseja instalar o tema [y/n]? " yn
     case $yn in
-        [Yy]* ) repairPanel; break;;
+        [Yy]* ) repararPainel; break;;
         [Nn]* ) exit;;
         * ) echo "Por favor responda yes ou no.";;
     esac
