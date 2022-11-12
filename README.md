@@ -1,4 +1,4 @@
-TemuxOS Theme
+TemuxOS Themes
 
 Instalação do script:
 ```sh
