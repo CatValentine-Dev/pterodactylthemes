@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo(){
+    echo -e '\e[36m'$1'\e[0m';
+}
+
 if (( $EUID != 0 )); then
     echo "Rode esse script usando root"
     exit
@@ -60,7 +64,7 @@ restaurarbackup(){
     yarn build:production
     sudo php artisan optimize:clear
 }
-echo "\033[1;36m Copyright (c) 2022 TemuxOS \033[0m"
+echo "Copyright (c) 2022 TemuxOS"
 echo "Esse progama e um software livre, você pode modificar e distribuir sem problemas"
 echo ""
 echo "Discord: https://discord.gg/WkVVtTaBRh/"
