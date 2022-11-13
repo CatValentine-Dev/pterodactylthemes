@@ -60,7 +60,7 @@ restaurarbackup(){
     yarn build:production
     sudo php artisan optimize:clear
 }
-echo "Copyright (c) 2022 TemuxOS"
+echo "\033[1;36m Copyright (c) 2022 TemuxOS \033[0m"
 echo "Esse progama e um software livre, você pode modificar e distribuir sem problemas"
 echo ""
 echo "Discord: https://discord.gg/WkVVtTaBRh/"
