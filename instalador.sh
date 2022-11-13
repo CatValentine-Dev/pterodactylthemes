@@ -1,9 +1,5 @@
 #!/bin/bash
 
-echo(){
-    echo -e '\e[36m'$1'\e[0m';
-}
-
 if (( $EUID != 0 )); then
     echo "Rode esse script usando root"
     exit
