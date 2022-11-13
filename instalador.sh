@@ -62,15 +62,15 @@ restaurarbackup(){
 }
 
     CYAN='\033[0;36m'
-    echo "${CYAN}Copyright (c) 2022 TemuxOS"
-    echo "${CYAN}Esse progama e um software livre, você pode modificar e distribuir sem problemas"
-    echo ""
-    echo "${CYAN}Discord: https://discord.gg/WkVVtTaBRh/"
-    echo ""
-    echo "${CYAN}[1] Instalar o Tema"
-    echo "${CYAN}[2] Restaurar backup"
-    echo "${CYAN}[3] Reparar Painel (Use caso tenha algo problema na instalação do temas)"
-    echo "${CYAN}[4] Sair"
+    echo -e "${CYAN}Copyright (c) 2022 TemuxOS"
+    echo -e "${CYAN}Esse progama e um software livre, você pode modificar e distribuir sem problemas"
+    echo -e ""
+    echo -e "${CYAN}Discord: https://discord.gg/WkVVtTaBRh/"
+    echo -e ""
+    echo -e "${CYAN}[1] Instalar o Tema"
+    echo -e "${CYAN}[2] Restaurar backup"
+    echo -e "${CYAN}[3] Reparar Painel (Use caso tenha algo problema na instalação do temas)"
+    echo -e "${CYAN}[4] Sair"
 
 read -p "Insira um numero: " choice
 if [ $choice == "1" ]
