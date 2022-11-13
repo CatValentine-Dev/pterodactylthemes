@@ -54,6 +54,10 @@ reparar(){
     bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylthemes/main/reparar.sh)
 }
 
+output(){
+    echo -e '\e[36m'$1'\e[0m';
+}
+
 restaurarbackup(){
     echo "Restaurando Backup..."
     cd /var/www/
@@ -64,15 +68,15 @@ restaurarbackup(){
     yarn build:production
     sudo php artisan optimize:clear
 }
-echo "Copyright (c) 2022 TemuxOS"
-echo "Esse progama e um software livre, você pode modificar e distribuir sem problemas"
-echo ""
-echo "Discord: https://discord.gg/WkVVtTaBRh/"
-echo ""
-echo "[1] Instalar o Tema"
-echo "[2] Restaurar backup"
-echo "[3] Reparar Painel (Use caso tenha algo problema na instalação do temas)"
-echo "[4] Sair"
+output "Copyright (c) 2022 TemuxOS"
+output "Esse progama e um software livre, você pode modificar e distribuir sem problemas"
+output ""
+output "Discord: https://discord.gg/WkVVtTaBRh/"
+output ""
+output "[1] Instalar o Tema"
+output "[2] Restaurar backup"
+output "[3] Reparar Painel (Use caso tenha algo problema na instalação do temas)"
+output "[4] Sair"
 
 read -p "Insira um numero: " choice
 if [ $choice == "1" ]
