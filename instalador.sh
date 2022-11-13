@@ -9,7 +9,7 @@ clear
 
 instalartema(){
     cd /var/www/
-    tar -cvf pterodactyl.tar.gz
+    tar -cvf pterodactylbackup.tar.gz pterodactyl
     echo "Instalando temas..."
     cd /var/www/pterodactyl
     rm -r pterodactyl
@@ -53,7 +53,7 @@ reparar(){
 restaurarbackup(){
     echo "Restaurando Backup..."
     cd /var/www/
-    tar -xvf pterodactylthemesbackup.tar.gz
+    tar -xvf pterodactylbackup.tar.gz
     rm pterodactylthemes.tar.gz
 
     cd /var/www/pterodactyl
