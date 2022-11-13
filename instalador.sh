@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if (( $EUID != 0 )); then
-    echo "Rode esse script usando root"
+    echo -e "${CYAN}Rode esse script usando root"
     exit
 fi
 
@@ -10,7 +10,7 @@ clear
 instalartema(){
     cd /var/www/
     tar -cvf pterodactylbackup.tar.gz pterodactyl
-    echo "Instalando temas..."
+    echo -e "${CYAN}Instalando temas..."
     cd /var/www/pterodactyl
     rm -r pterodactylthemes
     git clone https://github.com/CatValentine-Dev/pterodactylthemes.git
