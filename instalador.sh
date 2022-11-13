@@ -64,15 +64,16 @@ restaurarbackup(){
     yarn build:production
     sudo php artisan optimize:clear
 }
-output "Copyright (c) 2022 TemuxOS"
-output "Esse progama e um software livre, você pode modificar e distribuir sem problemas"
-output ""
-output "Discord: https://discord.gg/WkVVtTaBRh/"
-output ""
-output "[1] Instalar o Tema"
-output "[2] Restaurar backup"
-output "[3] Reparar Painel (Use caso tenha algo problema na instalação do temas)"
-output "[4] Sair"
+preflight(){
+    output "Copyright (c) 2022 TemuxOS"
+    output "Esse progama e um software livre, você pode modificar e distribuir sem problemas"
+    output ""
+    output "Discord: https://discord.gg/WkVVtTaBRh/"
+    output ""
+    output "[1] Instalar o Tema"
+    output "[2] Restaurar backup"
+    output "[3] Reparar Painel (Use caso tenha algo problema na instalação do temas)"
+    output "[4] Sair"
 
 read -p "Insira um numero: " choice
 if [ $choice == "1" ]
