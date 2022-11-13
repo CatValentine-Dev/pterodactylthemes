@@ -12,9 +12,9 @@ instalartema(){
     tar -cvf pterodactylbackup.tar.gz pterodactyl
     echo "Instalando temas..."
     cd /var/www/pterodactyl
-    rm -r pterodactyl
+    rm -r pterodactylthemes
     git clone https://github.com/CatValentine-Dev/pterodactylthemes.git
-    cd pterodactyl
+    cd pterodactylthemes
     rm /var/www/pterodactyl/resources/scripts/pterodactylthemes.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     mv index.tsx /var/www/pterodactyl/resources/scripts/index.tsx
