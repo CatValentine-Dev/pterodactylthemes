@@ -1,5 +1,5 @@
 if (( $EUID != 0 )); then
-    echo -e "${CYAN}Rode esse script usando root"
+    echo -e "${CYAN}Run script as root"
     exit
 fi
 
@@ -24,10 +24,10 @@ english(){
 
     CYAN='\033[0;36m'
     echo -e "${CYAN}Copyright (c) 2022 TemuxOS"
-    echo -e "${CYAN}Esse progama e um software livre, você pode modificar e distribuir sem problemas"
-    echo -e ""
+    echo -e "${CYAN}This Software is opensource."
+    echo -e "Theme Instalator"
     echo -e "${CYAN}Discord: https://discord.gg/WkVVtTaBRh/"
-    echo -e ""
+    echo -e "Select your Language"
     echo -e "${CYAN}[1] Portuguese"
     echo -e "${CYAN}[2] German"
     echo -e "${CYAN}[3] English"
