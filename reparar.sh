@@ -48,7 +48,7 @@ repararPainel(){
 }
 
 while true; do
-    read -p "Tem certeza de que deseja instalar o tema [y/n]? " yn
+    read -p "Tem certeza que quer restaurar o painel? [y/n]? " yn
     case $yn in
         [Yy]* ) repararPainel; break;;
         [Nn]* ) exit;;
