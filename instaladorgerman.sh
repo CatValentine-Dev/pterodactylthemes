@@ -50,6 +50,10 @@ reparar(){
     bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylthemes/main/reparar.sh)
 }
 
+voltar(){
+ bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylthemes/main/menu.sh)
+}
+ 
 restaurarbackup(){
     echo "Sicherung wiederherstellen..."
     cd /var/www/
@@ -70,7 +74,8 @@ restaurarbackup(){
     echo -e "${CYAN}[1] Theme installieren"
     echo -e "${CYAN}[2] Backup wiederherstellen"
     echo -e "${CYAN}[3] Reparaturbereich (Verwenden Sie diese Option, wenn Sie Probleme beim Installieren der Designs haben)"
-    echo -e "${CYAN}[4] Hinausgehen"
+    echo -e "{$CYAN}[4] Rückgabe "
+    echo -e "${CYAN}[5] Hinausgehen"
 
 read -p "Geben Sie eine Zahl ein: " choice
 if [ $choice == "1" ]
@@ -87,5 +92,11 @@ if [ $choice == "3" ]
 fi
 if [ $choice == "4" ]
     then
-    exit
+    voltar
+fi
+
+fi 
+ if [ $choice == "5"]
+   then
+   exit
 fi
