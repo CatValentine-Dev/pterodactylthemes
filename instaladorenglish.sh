@@ -74,7 +74,7 @@ restaurarbackup(){
     echo -e "${CYAN}[1] Install Theme"
     echo -e "${CYAN}[2] Restore Backup"
     echo -e "${CYAN}[3] Repair Panel (Use if you have a problem installing the themes)"
-    echo -e "${CYAN}[4] Back
+    echo -e "${CYAN}[4] Back"
     echo -e "${CYAN}[5] Exit"
 
 read -p "Enter a number: " choice
