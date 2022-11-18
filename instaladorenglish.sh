@@ -35,6 +35,10 @@ instalartema(){
 
 }
 
+voltar(){
+bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylthemes/main/menu.sh)
+}
+
 instaladordetemas(){
     while true; do
         read -p "Are you sure you want to install the theme [y/n]? " yn
@@ -70,7 +74,8 @@ restaurarbackup(){
     echo -e "${CYAN}[1] Install Theme"
     echo -e "${CYAN}[2] Restore Backup"
     echo -e "${CYAN}[3] Repair Panel (Use if you have a problem installing the themes)"
-    echo -e "${CYAN}[4] Exit"
+    echo -e "${CYAN}[4] Voltar
+    echo -e "${CYAN}[5] Exit"
 
 read -p "Enter a number: " choice
 if [ $choice == "1" ]
@@ -86,6 +91,11 @@ if [ $choice == "3" ]
     reparar
 fi
 if [ $choice == "4" ]
+    then
+    voltar
+fi
+fi 
+if [ $choice == "5"]
     then
     exit
 fi
