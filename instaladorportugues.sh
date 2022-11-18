@@ -71,11 +71,11 @@ restaurarbackup(){
     echo -e ""
     echo -e "${CYAN}Discord: https://discord.gg/WkVVtTaBRh/"
     echo -e ""
-    echo -e "${CYAN}[1] Instalar o Tema"
-    echo -e "${CYAN}[2] Restaurar backup"
-    echo -e "${CYAN}[3] Reparar Painel (Use caso tenha algo problema na instalação do temas)"
-    echo -e "${CYAN}[4] Voltar"
-    echo -e "${CYAN}[5] Sair"
+    echo -e "${CYAN} [1] Instalar o Tema"
+    echo -e "${CYAN} [2] Restaurar backup"
+    echo -e "${CYAN} [3] Reparar Painel (Use caso tenha algo problema na instalação do temas)"
+    echo -e "${CYAN} [4] Voltar"
+    echo -e "${CYAN} [5] Sair"
 
 read -p "Insira um numero: " choice
 if [ $choice == "1" ]
