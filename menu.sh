@@ -9,17 +9,14 @@ clear
 
 portuguese(){
     bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylthemes/main/instaladorportugues.sh)
-    echo -e "${CYAN}Mudando Linguagem...."
 }
 
 german(){
     bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylthemes/main/instaladorgerman.sh)
-    echo -e "${CYAN}Sprache ändern...."
 }
 
 english(){
     bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/pterodactylthemes/main/instaladorenglish.sh)
-    echo -e "${CYAN}Changing to english...."
 }
 
     CYAN='\033[0;36m'
