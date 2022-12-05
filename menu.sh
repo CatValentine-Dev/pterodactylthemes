@@ -1,6 +1,7 @@
 if (( $EUID != 0 )); then
     echo -e "${CYAN}Run script as root"
     exit
+fi
 
 clear
 
