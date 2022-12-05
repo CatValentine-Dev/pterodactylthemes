@@ -94,8 +94,6 @@ if [ $choice == "4" ]
     then
     voltar
 fi
-
-fi 
  if [ $choice == "5"]
    then
    exit
