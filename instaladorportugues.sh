@@ -1,4 +1,6 @@
 #!/bin/bash
+CYAN='\033[0;36m'
+echo -e "${CYAN}Mudando Linguagem...."
 
 if (( $EUID != 0 )); then
     echo -e "${CYAN}Rode esse script usando root"
